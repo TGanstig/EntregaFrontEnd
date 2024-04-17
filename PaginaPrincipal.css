@@ -1,0 +1,42 @@
+  /* Estilos generales */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+/* Estilos del encabezado */
+.Header {
+    background-color: #14384F; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    display: flex; /* Mostrar los elementos en línea */
+    align-items: center; /* Centrar verticalmente */
+}
+.Brand {
+    flex: 1; /* Ocupa todo el espacio disponible */
+}
+.Brand img {
+    max-height: 50px; /* Ajusta el tamaño del logo */
+}
+.Menu {
+    flex: 2; /* Ocupa más espacio que el logo */
+}
+.Menu ul {
+    list-style: none; /* Quitar viñetas de la lista */
+    display: flex; /* Mostrar los enlaces en línea */
+    justify-content: space-between; /* Espaciado uniforme entre los enlaces */
+}
+.Menu ul li {
+    margin-right: 20px; /* Espaciado entre los enlaces */
+}
+.Menu ul li a {
+    color: #fff; /* Color del texto de los enlaces */
+    text-decoration: none; /* Quitar subrayado */
+}
+.CatPrinMenu {
+    display: flex; /* Mostrar los elementos en línea */
+    align-items: center; /* Centrar verticalmente */
+}
+.MenuItem img {
+    max-height: 180px; /* Ajusta el tamaño de las imágenes*/
+}
