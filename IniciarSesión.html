@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicia sesión</title>
+    <link rel="stylesheet" href="CrearCuenta.css">
+</head>
+<body>
+    <div class="Header">
+        <div class="Brand">
+            <img class="Logo" id="Logo" src="/EntregaFontEnd/Imágenes/Logo.svg" alt="Logo">
+            <label class="LogoTitle" for="Logo">TecSolutions</label>
+        </div>
+    </div>
+    <div class="Form">
+        <div class="FormHeader">
+            <h1>Inicia Sesión</h1>
+        </div>
+        <form action="/ConseguirCodigo" method="post">      
+            <div class="FormInputs">
+                <div class="FormLabel">
+                    <label for="correo">Correo <br></label>
+                    <input type="email" id="correo" required>
+                </div>
+                <div class="FormLabel">
+                    <label for="contraseña">Contraseña <br></label>
+                    <input type="password" id="contraseña" required>
+                </div>
+            </div>
+            <br>
+            <div class="Submit">
+                <input type="submit" value="Iniciar sesion">
+            </div>
+            <br>
+            <div class="FormFooter">
+                ¿No tienes una cuenta? <a href="#">Registrate</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
