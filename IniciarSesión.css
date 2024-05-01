@@ -1,0 +1,155 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+/* Estilos del encabezado */
+.Header {
+    width: 100%;
+    height: 114px; /* Altor del encabezado */
+    position: relative; 
+    background-color: #14384F; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto */
+    /*display: flex; /* Mostrar los elementos en línea */
+    /*align-items: center; /* Centrar verticalmente */
+}
+/* Estilos del logo del encabezado */
+.Logo {
+    width: 91px; /* Ancho */
+    height: 73px; /* Alto*/
+    left: 66px; /* Margen izquierdo */
+    top: 22px; /* Margen superior */
+    position: absolute; /* Posición */
+}
+/* Estilos del texto de la marca */
+.Marca {
+    width: 153px;
+    left: 162px;
+    top: 36px;
+    position: absolute;
+    font-size: 32px; /* Tamaño de la fuente */
+    font-weight: 700; /* Ancho de la fuente */
+    line-height: 27px; /* Alto del interlineado */
+    word-wrap: break-word; /* Seccionador del texto */
+}
+/* Estilos del formulario */
+.Form {
+    width: 460px; /* Ajusta el ancho del contenedor */
+    height: 100vh;
+    top: 10vh;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    justify-content: center; /* Centra verticalmente los elementos */
+    align-items: center; /* Centra horizontalmente los elementos */
+    margin: 0 auto; /* Centra horizontalmente el contenedor */
+    background: #FAFAFA;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+/* Estilos del encabezado del formulario */
+.FormHeader {
+    left: 40px;
+    top: 39.50px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: inline-flex;
+}
+/* Estilos del mensaje del encacbezado del formulario */
+.FormHeaderMensaje {
+    font-size: 12.80px;
+    font-weight: 400;
+    line-height: 22.53px;
+    word-wrap: break-word;
+}
+/* Estilos del titulo del encacbezado del formulario */
+.FormHeaderTitulo {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 44px;
+    word-wrap: break-word;
+}
+/* Estilos del cuerpo del formulario */
+.FormBody {
+    left: 40.50px;
+    top: 131px;
+    position: absolute;
+}
+/*  */
+.FormInputs {
+    width: 380px;
+    height: 218px;
+    position: relative;
+}
+/*  */
+.FormLabel1 {
+    width: 380px;
+    height: 69px;
+    position: absolute;
+}
+.FormLabel2 {
+    width: 380px;
+    height: 71px;
+    top: 75px;
+    position: absolute;
+}
+/*  */
+.FormInput {
+    width: 380px;
+    height: 56px;
+    top: 13px;
+    position: absolute;
+    color: #757575;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px #424242 solid;
+    background-color: #FAFAFA;
+}
+.FormLabel {
+    width: 75px;
+    height: 23px;
+    left: 11.18px;
+    position: absolute;
+    font-size: 12.80px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 22.53px;
+    background-color: #FAFAFA;
+}
+/*  */
+.Submit {
+    width: 380px;
+    height: 56px;
+    top: 162px;
+    position: relative;
+}
+.Submit input {
+    width: 380px;
+    height: 56px;
+    font-size: 12.80px;
+    font-weight: 700;
+    background: #212121;
+    color:#FFFFFF;
+    border-radius: 8px;
+}
+/*  */
+.FormFooter {
+    left: 147px;
+    top: 362px;
+    position: absolute;
+    color: #212121;
+    font-size: 12.80px;
+    font-weight: 400;
+}
+.FormFooter a{
+    font-weight: 700;
+}
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */

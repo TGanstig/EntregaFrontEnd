@@ -1,0 +1,169 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+/* Estilos del encabezado */
+.Header {
+    height: 6vw; /* Altor del encabezado */
+    position: relative; 
+    background-color: #14384F; /* Color de fondo del encabezado */
+    color: #FFFFFF; /* Color del texto */
+    /*display: flex; /* Mostrar los elementos en línea */
+    /*align-items: center; /* Centrar verticalmente */
+}
+/* Estilos del logo del encabezado */
+.Logo {
+    width: 5vw;
+    left: 3.5vw; /* Margen izquierdo */
+    top: 1.15vw; /* Margen superior */
+    position: absolute; /* Posición */
+}
+/* Estilos del texto de la marca */
+.Marca {
+    width: 10vw;
+    left: 9vw;
+    top: 2vw;
+    position: absolute;
+    font-size: 1.8vw; /* Tamaño de la fuente */
+    font-weight: 700; /* Ancho de la fuente */
+    line-height: 1.6vw; /* Alto del interlineado */
+    word-wrap: break-word; /* Seccionador del texto */
+}
+/*  */
+.MenuNavegacion {
+    width: 100vw;
+    height: 6vw;
+    margin-left: 21vw;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+.MenuAdicionales {
+    width: 100%;
+    height: 6vw;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.MenuElemento {
+    list-style: none; /* Quitar viñetas de la lista */
+    display: flex; /* Mostrar los enlaces en línea */
+    padding: 0;
+}
+.MenuElemento li {
+    margin-right: 1vw; /* Espaciado entre los enlaces */
+    display: flex;
+}
+.MenuElemento li a {
+    color: #fff; /* Color del texto de los enlaces */
+    font-size: 0.83vw;
+    text-decoration: none; /* Quitar subrayado */
+}
+/*  */
+.Contenido {
+    width: 73vw;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+/*  */
+.HomeTitle {
+    top: 4vw;
+    position: absolute;
+    font-size: 5vw;
+    text-align: center;
+    font-weight: 550;
+    word-wrap: break-word;
+}
+/*  */
+.CategoriasPrincipales {
+    top: 15vw;
+    position: absolute;
+}
+.CatPrinEncabezado {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+.CatPrinTitulo {
+    font-size: 3.5vw;
+    font-weight: 700;
+    align-self: center;
+    margin-right: 30px;
+    line-height: 3vw;
+}
+.CatPrinDescripcion {
+    font-size: 1.6vw;
+    align-self: center;
+    color: #484848;
+}
+/*  */
+.CatPrinMenu {
+    top: 8.5vw;
+    position: absolute;
+    display: flex; /* Mostrar los elementos en línea */
+    text-align: center;
+}
+.MenuItem img {
+    max-height: 16vw; /* Ajusta el tamaño de las imágenes*/
+}
+.MenuItem a {
+    font-size: 2vw;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+/*  */
+.CatPrinFooter {
+    width: 100%;
+    top: 28vw;
+    position: absolute;
+    text-align: center;
+    color: #484848;
+}
+.CatPrinFooterMain {
+    margin-bottom: 0.5vw;
+    font-size: 1.8vw;
+}
+.CatPrinFooterAclaracion {
+    font-size: 1.15vw;
+}
+/*  */
+.BloqueFavoritos {
+    width: 100%;
+    height: 12vw;
+    top: 52vw;
+    position: relative;
+    display: flex;
+}
+.LosFavoritos {
+    width: 50vw;
+    display: flex;
+    margin: 0 auto;
+    align-self: center;
+}
+.LosFavoritosTitulo {
+    font-size: 1.9vw;
+    font-weight: 700;
+    margin-right: 30px;
+    line-height: 0.8vw;
+}
+.LosFavoritosMenu {
+    display: flex; /* Mostrar los elementos en línea */
+    text-align: center;
+}
+.LosFavoritosMenuItem img{
+    max-height: 9vw; /* Ajusta el tamaño de las imágenes*/
+}
+.LosFavoritosMenuItem a{
+    font-size: 0.9vw;
+    font-weight:bold;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+/*  */
