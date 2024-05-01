@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta</title>
+    <!-- Enlaza el archivo CSS externo -->
+    <link rel="stylesheet" href="CrearCuenta.css">
+    <!-- Referencia a Google Fonts para la fuente "Zen Kaku Gothic Antique" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <div class="Header">
+        <div class="Logo">
+            <img src="Imágenes/Logo.svg" alt="Logo">
+        </div>
+        <div class="Marca">
+            Tec
+            <br>
+            Solutions
+        </div>
+    </div>
+    <!-- Formulario para crear una cuenta -->
+    <div class="Form">
+        <!-- Encabezado del formulario -->
+        <div class="FormHeader">
+            <div class="FormHeaderMensaje">
+                Empecemos
+            </div>
+            <div class="FormHeaderTitulo">
+                Crea tu Cuenta
+            </div>
+        </div>
+        <!-- Cuerpo del formulario -->
+        <div class="FormBody">
+            <form action="/IniciarSesion" method="post">
+                <!-- Campos de entrada -->
+                <div class="FormInputs">
+                    <div class="FormLabel1">
+                        <input class="FormInput" type="email" id="correo" required>
+                        <label class="FormLabel" for="correo">Correo <br></label>
+                    </div>
+                    <div class="FormLabel2">
+                        <input class="FormInput" type="text" id="nombre" required>
+                        <label class="FormLabel" for="nombre">Nombre <br></label>
+                    </div>
+                    <div class="FormLabel3">
+                        <input class="FormInput" type="tel" id="telefono" required>
+                        <label class="FormLabel" for="telefono">Telefono <br></label>
+                    </div>
+                    <div class="FormLabel4">
+                        <input class="FormInput" type="password" id="contraseña" required>
+                        <label class="FormLabel" for="contraseña">Contraseña <br></label>
+                    </div>
+                    <!-- Botón de envío del formulario -->
+                    <div class="Submit">
+                        <input type="submit" value="Crear">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- Pie del formulario -->
+        <div class="FormFooter">
+            ¿Ya tienes una cuenta? <a href="#">Iniciar sesión</a>
+        </div>
+    </div>
+</body>
+</html>

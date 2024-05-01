@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicia sesión</title>
+    <link rel="stylesheet" href="IniciarSesión.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="Header">
+        <div class="Logo">
+            <img src="Imágenes/Logo.svg" alt="Logo">
+        </div>
+        <div class="Marca">
+            Tec
+            <br>
+            Solutions
+        </div>
+    </div>
+    <div class="Form">
+        <div class="FormHeader">
+            <div class="FormHeaderMensaje">
+                Bienvenido
+            </div>
+            <div class="FormHeaderTitulo">
+                Inicia Sesión
+            </div>
+        </div>
+        <div class="FormBody">
+            <form action="/PáginaPrincipal" method="post">
+                <div class="FormInputs">
+                    <div class="FormLabel1">
+                        <input class="FormInput" type="email" id="correo" required>
+                        <label class="FormLabel" for="correo">Correo <br></label>
+                    </div>
+                    <div class="FormLabel2">
+                        <input class="FormInput" type="password" id="contraseña" required>
+                        <label class="FormLabel" for="contraseña">Contraseña <br></label>
+                    </div>
+                    <div class="Submit">
+                        <input type="submit" value="Entrar">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="FormFooter">
+            ¿No tienes una cuenta? <a href="#">Crear</a>
+        </div>
+    </div>
+</body>
+</html>
