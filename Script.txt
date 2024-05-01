@@ -1,0 +1,28 @@
+Este archivo .py es un script de Flask que define rutas para diferentes páginas web.
+Estos son los comentarios para entender cada parte:
+
+1. Importación de Módulos:
+-Se importa la clase Flask del módulo flask.
+-Se importa la clase render_template del módulo flask.
+
+2. Creación de la Aplicación Flask:
+-Se crea una instancia de la aplicación Flask con el nombre app.
+-Se configura la ruta base para archivos estáticos como /static.
+
+3. Rutas Definidas:
+-@app.route('/'): Esta función decoradora define la ruta raíz(página de creación de cuenta)
+    y llama a la función CrearCuenta() cuando se accede a esa ruta.
+-@app.route('/IniciarSesion', methods=['POST']): Define la ruta para la página de inicio de 
+    sesión y especifica que solo acepta solicitudes POST.
+-@app.route('/PaginaPrincipal', methods=['POST']): Define la ruta para la página principal y 
+    también acepta solicitudes POST.
+
+4. Funciones de Ruta:
+-CrearCuenta(): Retorna la plantilla HTML CrearCuenta.html.
+-IniciarSesion(): Retorna la plantilla HTML IniciarSesion.html cuando se envía una solicitud
+    POST.
+-PaginaPrincipal(): Retorna la plantilla HTML PaginaPrincipal.html cuando se envía una
+    solicitud POST.
+
+Estas rutas se utilizan para renderizar las páginas web correspondientes en función 
+de las solicitudes del usuario.

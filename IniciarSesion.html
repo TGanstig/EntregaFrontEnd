@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crear cuenta</title>
-    <!-- Referencia a Google Fonts para la fuente "Zen Kaku Gothic Antique" -->
+    <title>Inicia sesión</title>
+    <!-- Enlaces a fuentes de Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Definición de estilos CSS -->
     <style>
         /* Estilos generales */
         body {
@@ -15,7 +16,7 @@
             padding: 0; /* Relleno interior */
             font-family: 'Zen Kaku Gothic Antique', sans-serif; /* Fuente de texto */
         }
-
+    
         /* Estilos del encabezado */
         .Header {
             width: 100%; /* Ancho del encabezado */
@@ -26,7 +27,7 @@
             /*display: flex; /* Mostrar los elementos en línea */
             /*align-items: center; /* Centrar verticalmente */
         }
-
+    
         /* Estilos del logo del encabezado */
         .Logo {
             width: 91px; /* Ancho del logo */
@@ -35,7 +36,7 @@
             top: 22px; /* Margen superior */
             position: absolute; /* Posición absoluta */
         }
-
+    
         /* Estilos del texto de la marca */
         .Marca {
             width: 153px; /* Ancho del texto de la marca */
@@ -47,7 +48,7 @@
             line-height: 27px; /* Altura de línea */
             word-wrap: break-word; /* División de palabras */
         }
-
+    
         /* Estilos del formulario */
         .Form {
             width: 460px; /* Ancho del contenedor del formulario */
@@ -63,7 +64,7 @@
             border-top-left-radius: 24px; /* Radio de esquina superior izquierda */
             border-top-right-radius: 24px; /* Radio de esquina superior derecha */
         }
-
+    
         /* Estilos del encabezado del formulario */
         .FormHeader {
             left: 40px; /* Margen izquierdo */
@@ -74,7 +75,7 @@
             align-items: flex-start; /* Alinear al inicio horizontalmente */
             display: inline-flex; /* Mostrar como flexbox en línea */
         }
-
+    
         /* Estilos del mensaje del encabezado del formulario */
         .FormHeaderMensaje {
             font-size: 12.80px; /* Tamaño de fuente */
@@ -82,7 +83,7 @@
             line-height: 22.53px; /* Altura de línea */
             word-wrap: break-word; /* División de palabras */
         }
-
+    
         /* Estilos del título del encabezado del formulario */
         .FormHeaderTitulo {
             font-size: 25px; /* Tamaño de fuente */
@@ -90,21 +91,19 @@
             line-height: 44px; /* Altura de línea */
             word-wrap: break-word; /* División de palabras */
         }
-
+    
         /* Estilos del cuerpo del formulario */
         .FormBody {
             left: 40.50px; /* Margen izquierdo */
             top: 131px; /* Margen superior */
             position: absolute; /* Posición absoluta */
         }
-
-        /* Estilos de los inputs del formulario */
+        /*  */
         .FormInputs {
             width: 380px; /* Ancho de los inputs */
-            height: 370px; /* Alto de los inputs */
+            height: 218px; /* Alto de los inputs */
             position: relative; /* Posición relativa */
         }
-
         /* Estilos de las etiquetas del formulario */
         .FormLabel1 {
             width: 380px; /* Ancho de la etiqueta 1 */
@@ -118,21 +117,6 @@
             top: 75px; /* Posición superior desde el borde superior del contenedor */
             position: absolute; /* Posición absoluta en relación con su contenedor */
         }
-
-        .FormLabel3 {
-            width: 380px; /* Ancho del elemento */
-            height: 71px; /* Altura del elemento */
-            top: 150px; /* Posición superior desde el borde superior del contenedor */
-            position: absolute;
-        }
-
-        .FormLabel4 {
-            width: 380px; /* Ancho del elemento */
-            height: 71px; /* Altura del elemento */
-            top: 225px; /* Posición superior desde el borde superior del contenedor */
-            position: absolute;
-        }
-
         /* Estilos para los elementos con clase .FormInput */
         .FormInput {
             width: 380px; /* Ancho del elemento */
@@ -158,15 +142,13 @@
             line-height: 22.53px; /* Altura de línea */
             background-color: #FAFAFA; /* Color de fondo */
         }
-
         /* Estilos para los elementos con clase .Submit */
         .Submit {
             width: 380px; /* Ancho del elemento */
             height: 56px; /* Altura del elemento */
-            top: 310px; /* Posición superior desde el borde superior del contenedor */
+            top: 162px; /* Posición superior desde el borde superior del contenedor */
             position: relative; /* Posición relativa en relación con su contenedor */
         }
-
         /* Estilos para los elementos de entrada dentro de .Submit */
         .Submit input {
             width: 380px; /* Ancho del elemento de entrada */
@@ -177,17 +159,15 @@
             color: #FFFFFF; /* Color del texto */
             border-radius: 8px; /* Radio de borde */
         }
-
         /* Estilos para los elementos con clase .FormFooter */
         .FormFooter {
             left: 127px; /* Posición izquierda desde el borde izquierdo del contenedor */
-            top: 512px; /* Posición superior desde el borde superior del contenedor */
+            top: 362px; /* Posición superior desde el borde superior del contenedor */
             position: absolute; /* Posición absoluta en relación con su contenedor */
             color: #212121; /* Color del texto */
             font-size: 12.80px; /* Tamaño de fuente */
             font-weight: 400; /* Peso de fuente */
         }
-
         /* Estilos para los enlaces dentro de .FormFooter */
         .FormFooter a {
             font-weight: 700; /* Peso de fuente para los enlaces */
@@ -195,7 +175,7 @@
     </style>
 </head>
 <body>
-    <!-- Encabezado de la página -->
+    <!-- Encabezado -->
     <div class="Header">
         <!-- Logo -->
         <div class="Logo">
@@ -208,22 +188,22 @@
             Solutions
         </div>
     </div>
-    <!-- Formulario para crear una cuenta -->
+    <!-- Formulario de inicio de sesión -->
     <div class="Form">
         <!-- Encabezado del formulario -->
         <div class="FormHeader">
             <!-- Mensaje de bienvenida -->
             <div class="FormHeaderMensaje">
-                Empecemos
+                Bienvenido
             </div>
             <!-- Título del formulario -->
             <div class="FormHeaderTitulo">
-                Crea tu Cuenta
+                Inicia Sesión
             </div>
         </div>
         <!-- Cuerpo del formulario -->
         <div class="FormBody">
-            <form action="/IniciarSesion" method="post">
+            <form action="/PaginaPrincipal" method="post">
                 <!-- Campos de entrada -->
                 <div class="FormInputs">
                     <!-- Campo 1: Correo -->
@@ -231,31 +211,21 @@
                         <input class="FormInput" type="email" id="correo" required>
                         <label class="FormLabel" for="correo">Correo <br></label>
                     </div>
-                    <!-- Campo 2: Nombre -->
+                    <!-- Campo 2: Contraseña -->
                     <div class="FormLabel2">
-                        <input class="FormInput" type="text" id="nombre" required>
-                        <label class="FormLabel" for="nombre">Nombre <br></label>
-                    </div>
-                    <!-- Campo 3: Teléfono -->
-                    <div class="FormLabel3">
-                        <input class="FormInput" type="tel" id="telefono" required>
-                        <label class="FormLabel" for="telefono">Teléfono <br></label>
-                    </div>
-                    <!-- Campo 4: Contraseña -->
-                    <div class="FormLabel4">
                         <input class="FormInput" type="password" id="contraseña" required>
                         <label class="FormLabel" for="contraseña">Contraseña <br></label>
                     </div>
-                    <!-- Botón de envío del formulario -->
+                    <!-- Botón de envío -->
                     <div class="Submit">
-                        <input type="submit" value="Crear">
+                        <input type="submit" value="Entrar">
                     </div>
                 </div>
             </form>
         </div>
         <!-- Pie del formulario -->
         <div class="FormFooter">
-            ¿Ya tienes una cuenta? <a href="#">Iniciar sesión</a>
+            ¿No tienes una cuenta? <a href="#">Crear</a>
         </div>
     </div>
 </body>
