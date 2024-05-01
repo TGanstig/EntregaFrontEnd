@@ -1,0 +1,19 @@
+El archivo HTML representa una página de inicio de sesión con comentarios
+para entender cada parte:
+
+1. Encabezado HTML:
+- Se establece la codificación de caracteres y la escala inicial para dispositivos móviles.
+- Se enlazan fuentes de Google para utilizar la fuente “Zen Kaku Gothic Antique”.
+
+2. Contenido del cuerpo (body):
+- Se crea un encabezado (Header) con un logo y el nombre de la marca.
+- Luego, se presenta un formulario de inicio de sesión con campos para correo
+    electrónico y contraseña.
+- El botón “Entrar” permite enviar el formulario.
+- Al final, se proporciona un enlace para crear una cuenta si el usuario no tiene una.
+
+3. Comentarios específicos:
+- Utiliza {{ url_for(...) }} para generar la URL correcta para el archivo de imagen
+    “Logo.svg”.
+- Se asegura de que los nombres de archivo y las rutas en tu HTML sean correctos y
+    coincidan con los nombres de tus imágenes en la carpeta static.
