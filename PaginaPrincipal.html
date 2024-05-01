@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecSolutions</title>
+    <style>
+        /* Estilos generales */
+        body {
+            margin: 0; /* Margen exterior */
+            padding: 0; /* Relleno interior */
+            font-family: 'Zen Kaku Gothic Antique', sans-serif; /* Fuente de texto */
+        }
+        /* Estilos del encabezado */
+        .Header {
+            height: 6vw; /* Altor del encabezado */
+            position: relative; 
+            background-color: #14384F; /* Color de fondo del encabezado */
+            color: #FFFFFF; /* Color del texto */
+        }
+        /* Estilos del logo del encabezado */
+        .Logo {
+            width: 5vw; /* Ancho del logo */
+            left: 3.5vw; /* Margen izquierdo */
+            top: 1.15vw; /* Margen superior */
+            position: absolute; /* Posición absoluta */
+        }
+        /* Estilos del texto de la marca */
+        .Marca {
+            width: 10vw; /* Ancho del texto de la marca */
+            left: 9vw; /* Margen izquierdo */
+            top: 2vw; /* Margen superior */
+            position: absolute; /* Posición absoluta */
+            font-size: 1.8vw; /* Tamaño de la fuente */
+            font-weight: 700; /* Ancho de la fuente */
+            line-height: 1.6vw; /* Alto del interlineado */
+            word-wrap: break-word; /* Seccionador del texto */
+        }
+        /* Estilos para los elementos con clase .MenuNavegacion */
+        .MenuNavegacion {
+            width: 100vw; /* Ancho igual al ancho de la ventana del navegador */
+            height: 6vw; /* Altura del elemento */
+            margin-left: 21vw; /* Margen izquierdo */
+            position: absolute; /* Posición absoluta en relación con su contenedor */
+            display: flex; /* Mostrar como un contenedor flexible */
+            align-items: center; /* Alinear elementos verticalmente al centro */
+        }
+
+        /* Estilos para los elementos con clase .MenuAdicionales */
+        .MenuAdicionales {
+            width: 100%; /* Ancho del elemento al 100% del contenedor */
+            height: 6vw; /* Altura del elemento */
+            position: absolute; /* Posición absoluta en relación con su contenedor */
+            display: flex; /* Mostrar como un contenedor flexible */
+            align-items: center; /* Alinear elementos verticalmente al centro */
+            justify-content: right; /* Justificar contenido a la derecha */
+        }
+        .MenuElemento {
+            list-style: none; /* Quitar viñetas de la lista */
+            display: flex; /* Mostrar los enlaces en línea */
+            padding: 0;
+        }
+        .MenuElemento li {
+            margin-right: 1vw; /* Espaciado entre los enlaces */
+            display: flex;
+        }
+        .MenuElemento li a {
+            color: #fff; /* Color del texto de los enlaces */
+            font-size: 0.83vw;
+            text-decoration: none; /* Quitar subrayado */
+        }
+        /* Estilos para el contenedor con clase .Contenido */
+        .Contenido {
+            width: 73vw; /* Ancho del elemento al 73% del ancho de la ventana del navegador */
+            height: 100vh; /* Altura igual a la altura de la ventana del navegador */
+            margin: 0 auto; /* Margen automático en los lados izquierdo y derecho */
+            position: relative; /* Posición relativa en relación con su contenedor */
+        }
+
+        /* Estilos para el título con clase .HomeTitle */
+        .HomeTitle {
+            top: 4vw; /* Posición superior desde el borde superior del contenedor */
+            position: absolute; /* Posición absoluta en relación con su contenedor */
+            font-size: 5vw; /* Tamaño de fuente */
+            text-align: center; /* Alineación de texto al centro */
+            font-weight: 550; /* Peso de fuente */
+            word-wrap: break-word; /* Romper palabras largas */
+        }
+
+        /* Estilos para los elementos con clase .CategoriasPrincipales */
+        .CategoriasPrincipales {
+            top: 15vw; /* Posición superior desde el borde superior del contenedor */
+            position: absolute; /* Posición absoluta en relación con su contenedor */
+        }
+
+        /* Estilos para el encabezado de categorías principales con clase .CatPrinEncabezado */
+        .CatPrinEncabezado {
+            width: 100%; /* Ancho del elemento al 100% del contenedor */
+            position: relative; /* Posición relativa en relación con su contenedor */
+            display: flex; /* Mostrar como un contenedor flexible */
+        }
+
+        /* Estilos para el título de categorías principales con clase .CatPrinTitulo */
+        .CatPrinTitulo {
+            font-size: 3.5vw; /* Tamaño de fuente */
+            font-weight: 700; /* Peso de fuente */
+            align-self: center; /* Alinear elemento verticalmente al centro */
+            margin-right: 30px; /* Margen derecho */
+            line-height: 3vw; /* Altura de línea */
+        }
+
+        /* Estilos para la descripción de categorías principales con clase .CatPrinDescripcion */
+        .CatPrinDescripcion {
+            font-size: 1.6vw; /* Tamaño de fuente */
+            align-self: center; /* Alinear elemento verticalmente al centro */
+            color: #484848; /* Color del texto */
+        }
+
+        /* Estilos para el menú de categorías principales con clase .CatPrinMenu */
+        .CatPrinMenu {
+            top: 8.5vw; /* Posición superior desde el borde superior del contenedor */
+            position: absolute; /* Posición absoluta en relación con su contenedor */
+            display: flex; /* Mostrar como un contenedor flexible */
+            text-align: center; /* Alineación de texto al centro */
+        }
+
+        /* Estilos para los elementos de menú dentro de .CatPrinMenu */
+        .MenuItem img {
+            max-height: 16vw; /* Ajusta el tamaño máximo de las imágenes */
+        }
+
+        .MenuItem a {
+            font-size: 2vw; /* Tamaño de fuente */
+            font-weight: 600; /* Peso de fuente */
+            color: black; /* Color del texto */
+            text-decoration: none; /* Sin decoración de texto (subrayado) */
+        }
+
+        /* Estilos para el pie de página de categorías principales con clase .CatPrinFooter */
+        .CatPrinFooter {
+            width: 100%; /* Ancho del elemento al 100% del contenedor */
+            top: 28vw; /* Posición superior desde el borde superior del contenedor */
+            position: absolute; /* Posición absoluta en relación con su contenedor */
+            text-align: center; /* Alineación de texto al centro */
+            color: #484848; /* Color del texto */
+        }
+
+        /* Estilos para el texto principal del pie de página con clase .CatPrinFooterMain */
+        .CatPrinFooterMain {
+            margin-bottom: 0.5vw; /* Margen inferior */
+            font-size: 1.8vw; /* Tamaño de fuente */
+        }
+
+        /* Estilos para la aclaración del pie de página con clase .CatPrinFooterAclaracion */
+        .CatPrinFooterAclaracion {
+            font-size: 1.15vw; /* Tamaño de fuente */
+        }
+        /* Estilos para el bloque de favoritos con clase .BloqueFavoritos */
+        .BloqueFavoritos {
+            width: 100%; /* Ancho del elemento al 100% del contenedor */
+            height: 12vw; /* Altura del elemento */
+            top: 52vw; /* Posición superior desde el borde superior del contenedor */
+            position: relative; /* Posición relativa en relación con su contenedor */
+            display: flex; /* Mostrar como un contenedor flexible */
+        }
+
+        /* Estilos para el contenedor de elementos favoritos con clase .LosFavoritos */
+        .LosFavoritos {
+            width: 50vw; /* Ancho del elemento al 50% del ancho de la ventana del navegador */
+            display: flex; /* Mostrar como un contenedor flexible */
+            margin: 0 auto; /* Margen automático en los lados izquierdo y derecho */
+            align-self: center; /* Alinear elemento verticalmente al centro */
+        }
+
+        /* Estilos para el título de elementos favoritos con clase .LosFavoritosTitulo */
+        .LosFavoritosTitulo {
+            font-size: 1.9vw; /* Tamaño de fuente */
+            font-weight: 700; /* Peso de fuente */
+            margin-right: 30px; /* Margen derecho */
+            line-height: 0.8vw; /* Altura de línea */
+        }
+
+        /* Estilos para el menú de elementos favoritos con clase .LosFavoritosMenu */
+        .LosFavoritosMenu {
+            display: flex; /* Mostrar los elementos en línea */
+            text-align: center; /* Alineación de texto al centro */
+        }
+
+        /* Estilos para los elementos de menú dentro de .LosFavoritosMenu */
+        .LosFavoritosMenuItem img {
+            max-height: 9vw; /* Ajusta el tamaño máximo de las imágenes */
+        }
+
+        .LosFavoritosMenuItem a {
+            font-size: 0.9vw; /* Tamaño de fuente */
+            font-weight: bold; /* Peso de fuente */
+            color: black; /* Color del texto */
+            text-decoration: none; /* Sin decoración de texto (subrayado) */
+            text-align: center; /* Alineación de texto al centro */
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <div class="Header">
+        <!-- Logo -->
+        <div class="Logo">
+            <img src="{{ url_for('static', filename='Logo.svg') }}" alt="Logo">
+        </div>
+        <!-- Nombre de la marca -->
+        <div class="Marca">
+            Tec
+            <br>
+            Solutions
+        </div>
+        <!-- Menú de navegación principal -->
+        <div class="MenuNavegacion">
+            <nav>
+                <ul class="MenuElemento">
+                    <li><a href="#">Página principal</a></li>
+                    <li><a href="#">Categorías</a></li>
+                    <li><a href="#">Técnicos destacados</a></li>
+                    <li><a href="#">Favoritos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Menú de opciones adicionales -->
+        <div class="MenuAdicionales">
+            <nav>
+                <ul class="MenuElemento">
+                    <li><a href="#">Conócenos</a></li>
+                    <li><a href="#">Cuenta</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- Contenido principal -->
+    <div class="Contenido">
+        <!-- Título principal -->
+        <div class="HomeTitle">
+            <div class="HomaTitleMain">
+                Encontremos el técnico ideal
+            </div>
+        </div>
+        <!-- Categorías principales -->
+        <div class="CategoriasPrincipales">
+            <!-- Encabezado de categorías -->
+            <div class="CatPrinEncabezado">
+                <div class="CatPrinTitulo">
+                    Categorías principales
+                </div>
+                <div class="CatPrinDescripcion">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, quae? Voluptatem fuga debitis rerum atque ducimus! Odit repudiandae perferendis maiores assumenda aspernatur?
+                </div>
+            </div>
+            <!-- Menú de categorías -->
+            <div class="CatPrinMenu">
+                <div class="MenuItem">
+                    <a href="#">
+                        <img src="{{ url_for('static', filename='Lavadora.png') }}" alt="Lavadoras">
+                        Lavadoras
+                    </a>
+                </div>
+                <div class="MenuItem">
+                    <a href="#">
+                        <img src="{{ url_for('static', filename='Nevera.png') }}" alt="Neveras">
+                        Neveras
+                    </a>
+                </div>
+                <div class="MenuItem">
+                    <a href="#">
+                        <img src="{{ url_for('static', filename='Aire.png') }}" alt="Aires">
+                        Aires
+                    </a>
+                </div>
+                <div class="MenuItem">
+                    <a href="#">
+                        <img src="{{ url_for('static', filename='Estufa.png') }}" alt="Estufas">
+                        Estufas
+                    </a>
+                </div>
+            </div>
+            <!-- Pie de categorías -->
+            <div class="CatPrinFooter">
+                <div class="CatPrinFooterMain">
+                    Selecciona la categoría y mira los diferentes técnicos disponibles
+                </div>
+                <div class="CatPrinFooterAclaracion">
+                    O mira el apartado completo de categorías
+                </div>
+            </div>
+        </div>
+        <!-- Bloque de favoritos -->
+        <div class="BloqueFavoritos">
+            <div class="LosFavoritos">
+                <!-- Título de favoritos -->
+                <div class="LosFavoritosTitulo">
+                    <h1>Los</h1>
+                    <h1>favoritos</h1>
+                </div>
+                <!-- Menú de favoritos -->
+                <div class="LosFavoritosMenu">
+                    <div class="LosFavoritosMenuItem">
+                        <a href="#">
+                            <img src="{{ url_for('static', filename='AnaMontoya.png') }}" alt="Ana Montoya">
+                            Ana Montoya
+                        </a>
+                    </div>
+                    <div class="LosFavoritosMenuItem">
+                        <a href="#">
+                            <img src="{{ url_for('static', filename='LeonelRios.png') }}" alt="Leonel Rios">
+                            Leonel Rios
+                        </a>
+                    </div>
+                    <div class="LosFavoritosMenuItem">
+                        <a href="#">
+                            <img src="{{ url_for('static', filename='MauricioCifuentes.png') }}" alt="Mauricio Cifuentes">
+                            Mauricio Cifuentes
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

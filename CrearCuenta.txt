@@ -1,0 +1,22 @@
+Este archivo HTML representa una página de creación de cuenta con
+comentarios paraentender cada parte:
+
+1. Encabezado HTML:
+- Se establece la codificación de caracteres y la escala inicial para
+    dispositivos móviles.
+- Se enlazan fuentes de Google para utilizar la fuente “Zen Kaku Gothic
+     Antique”.
+
+2. Contenido del cuerpo (body):
+- Se crea un encabezado (Header) con un logo y el nombre de la marca.
+- Luego, se presenta un formulario para crear una cuenta con campos para
+    correo electrónico, nombre, teléfono y contraseña.
+- El botón “Crear” permite enviar el formulario.
+- Al final, se proporciona un enlace para iniciar sesión si el usuario ya
+    tiene una cuenta.
+
+3. Comentarios específicos:
+Utiliza {{ url_for(...) }} para generar la URL correcta para el archivo de
+    imagen “Logo.svg”.
+Se asegura de que los nombres de archivo y las rutas en tu HTML sean correctos
+    y coincidan con los nombres de tus imágenes en la carpeta static.

@@ -1,0 +1,21 @@
+El archivo HTML representa una página principal para TecSolution
+con comentarios para entender cada parte:
+
+1. Encabezado (<head>):
+- La etiqueta <meta charset="UTF-8"> especifica la codificación de
+    caracteres para eldocumento.
+- La etiqueta <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    controla la escala inicial y el ancho del contenido en dispositivos móviles.
+- La etiqueta <meta name="description"> proporciona una breve descripción
+    de la página para SEO.
+- El título de la página se establece con la etiqueta <title>.
+
+2. Cuerpo (<body>):
+- La sección de encabezado (<div class="Header">) contiene el logo,
+    el nombre de la marca y los menús de navegación.
+- Los menús de navegación están organizados en dos divisiones:
+    “MenuNavegacion” y “MenuAdicionales”.
+- La sección de contenido (<div class="Contenido">) contiene
+    el título principaly las categorías principales.
+- Las categorías principales (<div class="CategoriasPrincipales">)
+    incluyen un encabezado, un menú de categorías y un pie
